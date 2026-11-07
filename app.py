@@ -9,7 +9,7 @@ st.markdown("""
     .title-font { font-size:26px !important; font-weight: bold; color: #89CFF0; text-align: center; }
     .text-font { font-size:18px !important; text-align: center; }
     </style>
-    """, unsafe_allow_index=True)
+    """, unsafe_allow_html=True)
 
 st.markdown('<p class="title-font">🎉 DETEKTOR HARI SPESIAL SAHABAT v1.0 🎉</p>', unsafe_allow_index=True)
 
@@ -22,10 +22,10 @@ if 'selesai' not in st.session_state:
 # Tampilan Utama (Sebelum target menyerah)
 if not st.session_state.selesai:
     # GIF Kucing lucu ulang tahun
-    st.image("https://giphy.com", width=250)
+    st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXZjdGFycWd4OGIxMTFxcGJ0MnAxZDZ2YzFuOWg2d29rNGdlcXZvbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/uyfgCPQeCjYMVxt2m3/giphy.gif", width=250)
     st.markdown('<p class="text-font">Denger-denger hari ini ada yang makin tua nih... Kamu ulang tahun hari ini kan? 👀</p>', unsafe_allow_index=True)
     
-    col1, col2 = st.columns()
+    col1, col2 = st.columns(2)
     
     with col1:
         if st.button("Iya bener! 🎂✨", use_container_width=True):
@@ -54,7 +54,7 @@ if not st.session_state.selesai:
 else:
     st.balloons() # Efek balon terbang meriah!
     st.snow()     # Efek salju/konfeti jatuh!
-    st.image("https://giphy.com", width=250)
+    st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXZjdGFycWd4OGIxMTFxcGJ0MnAxZDZ2YzFuOWg2d29rNGdlcXZvbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/TjSPQgowhhJdHgvnwA/giphy.gif", width=250)
     
     st.markdown('<p class="title-font">Happy Birthday, Bsf! 🥳🎈</p>', unsafe_allow_index=True)
     st.markdown("""
