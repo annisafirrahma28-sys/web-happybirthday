@@ -11,7 +11,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.markdown('<p class="title-font">🎉 DETEKTOR HARI SPESIAL SAHABAT v1.0 🎉</p>', unsafe_allow_index=True)
+st.markdown('<p class="title-font">🎉 DETEKTOR HARI SPESIAL SAHABAT v1.0 🎉</p>', unsafe_allow_html=True)
 
 # Membuat session state untuk menyimpan memori klik web
 if 'hitung' not in st.session_state:
