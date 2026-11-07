@@ -23,7 +23,7 @@ if 'selesai' not in st.session_state:
 if not st.session_state.selesai:
     # GIF Kucing lucu ulang tahun
     st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXZjdGFycWd4OGIxMTFxcGJ0MnAxZDZ2YzFuOWg2d29rNGdlcXZvbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/uyfgCPQeCjYMVxt2m3/giphy.gif", width=250)
-    st.markdown('<p class="text-font">Denger-denger hari ini ada yang makin tua nih... Kamu ulang tahun hari ini kan? 👀</p>', unsafe_allow_index=True)
+    st.markdown('<p class="text-font">Denger-denger hari ini ada yang makin tua nih... Kamu ulang tahun hari ini kan? 👀</p>', unsafe_allow_html=True)
     
     col1, col2 = st.columns(2)
     
@@ -56,7 +56,7 @@ else:
     st.snow()     # Efek salju/konfeti jatuh!
     st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXZjdGFycWd4OGIxMTFxcGJ0MnAxZDZ2YzFuOWg2d29rNGdlcXZvbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/TjSPQgowhhJdHgvnwA/giphy.gif", width=250)
     
-    st.markdown('<p class="title-font">Happy Birthday, Bsf! 🥳🎈</p>', unsafe_allow_index=True)
+    st.markdown('<p class="title-font">Happy Birthday, Bsf! 🥳🎈</p>', unsafe_allow_html=True)
     st.markdown("""
     <p class="text-font">
     Happy Birthday my dearest beloved best friend. 17 tahun astagaa, BUAT KTP WOY!! tapi gausah buru buru buat KTP nya sih,
@@ -65,7 +65,7 @@ else:
     gw be like ''Lho ya boleh wong ditawari'' :vvVVvV SORRYY FREAK BGT YYHHHH wkekekek maaf <br><br>
     Satu pertanyaan terakhir... <b>Kapan nih kita bertemu humph?</b> Ditunggu undangannya! 🍕🍰✨
     </p>
-    """, unsafe_allow_index=True)
+    """, unsafe_allow_html=True)
     
     if st.button("Ulangi Kejutan 🔄"):
         st.session_state.hitung = 0
